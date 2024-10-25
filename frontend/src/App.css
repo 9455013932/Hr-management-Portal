@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.pnf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 65vh;
+}
+
+.pnf-404 {
+    font-size: 100px;
+    font-weight: 700;
+    font-weight: normal;
+}
+
+.pnf-oopx {
+    font-size: 2rem;
+}
+
+.pnf-btn {
+    padding: 0.3rem 0.8rem;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.pnf-btn:hover {
+    background-color: aliceblue;
+    color: black;
+
+}
+
+/* branch css */
+::placeholder {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+.branch label {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.branch .create {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: initial;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.transition-transform {
+    transition: transform 0.3s;
+}
+
+.userTable {
+
+    @apply bg-white
+}
+
+.userTable th {
+    @apply border text-sm md:text-base font-medium px-2 lg:whitespace-nowrap py-1
+}
+
+.userTable td {
+    @apply border-2 text-sm md:text-base shadow-md hover:bg-gray-200 px-2 lg:whitespace-nowrap
+}
+
+/* cust associate */
+.cust label {
+    @apply text-[0.9rem] md:w-[262px] md:border-r-2 md:shadow-md flex px-1 items-center
+}
+
+.cust .xx label {
+    @apply text-[0.9rem] md:w-[262px] md:border-r-2 md:shadow-md flex px-3 items-center
+}
+
+.cust input {
+    @apply text-[0.9rem] text-gray-500 border-r-2
+}
+
+.cust select {
+    @apply text-[0.9rem] text-gray-500 border-r-2 shadow-md
+}
+
+.cust select option {
+    @apply text-[0.9rem] text-gray-500
+}
+
+/* associate cust */
+.associate label {
+    @apply text-[0.9rem] md:w-[235px] md:border-r-2 md:shadow-md flex ps-1 items-center
+}
+
+.associate .ss>p {
+    @apply text-[0.8rem] md:w-[159px] md:border-r-2 md:shadow-md flex items-center
+}
+
+.associate input {
+    @apply text-[0.9rem] text-gray-500 border-r-2
+}
+
+.associate select {
+    @apply text-[0.9rem] text-gray-500 border-r-2 shadow-md
+}
+
+.associate select option {
+    @apply text-[0.9rem] text-gray-500
+}
+
+
+
+
+
+
+
+.box-item {
+    position: relative;
+    /* This makes the ::after element relative to this element */
+    overflow: hidden;
+    /* Ensures that the ::after element is not shown when not hovered */
+}
+
+.box-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    /* Start from the right side */
+    width: 100%;
+    height: 3px;
+    background-color: #3498db;
+    /* The color of the border */
+    transition: all 0.4s ease;
+    /* Animate both width and left */
+}
+
+.box-item:hover::after {
+    left: 0;
+    /* Move to the left */
+}
+
+
+/* welcome user */
+/* Define the animation */
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Apply the animation to the text */
+.color-cycle {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    background: linear-gradient(to right, red, green, blue);
+    background-size: 300%;
+    /* Allows the gradient to "move" */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* Hides the original text */
+    animation: colorShift 3s infinite linear;
+}
+
+
+.shine-effect {
+    position: relative;
+    /* overflow: hidden; */
+    background: linear-gradient(80deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(12, 5, 26, 0.1);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    45% {
+        background-position: -150%;
+    }
+
+    70% {
+        background-position: 150%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+/* Custom class to hide scrollbar */
+.scrollbar-hide {
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
+}
+
+
+
+
+
+
+
+/* #associatePrint .detail .sub-detail .text-details{
+  display: flex;
+  align-items: center;
+   } */

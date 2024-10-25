@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes borderAnimation {
+    0% {
+      border-color: red;
+    }
+    25% {
+      border-color: blue;
+    }
+    50% {
+      border-color: white;
+    }
+    75% {
+      border-color: yellow;
+    }
+    100% {
+      border-color: green;
+    }
+  }
+  
+  .border-animate:hover {
+    animation: borderAnimation 200ms infinite;
+    border: 2px solid; /* Add this line to ensure the border is visible */
+  }
+  
+    
